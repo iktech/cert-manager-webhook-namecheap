@@ -13,8 +13,9 @@ certManager:
   serviceAccountName: cert-manager
 
 image:
-  repository: ghcr.io/extrality/cert-manager-webhook-namecheap
-  tag: latest
+  repository: docker.io/iktech/cert-manager-webhook-namecheap
+  # Defaults to the chart appVersion when empty.
+  tag: ""
   pullPolicy: IfNotPresent
 
 nameOverride: ""
